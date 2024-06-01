@@ -11,7 +11,7 @@ author: Zhenshuai Yin
 description: 算法竞赛进阶指南-第四章-同余
 hidden: false
 image: /assets/images/markdown.jpg
-headerImage: false
+headerImage: true
 ---
 
 # 同余

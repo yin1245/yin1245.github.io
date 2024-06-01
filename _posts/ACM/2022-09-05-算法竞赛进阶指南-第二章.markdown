@@ -11,7 +11,7 @@ author: Zhenshuai Yin
 description: 算法竞赛进阶指南例题(第二章)
 hidden: false
 image: /assets/images/markdown.jpg
-headerImage: false
+headerImage: true
 ---
 
 # 基本数据结构

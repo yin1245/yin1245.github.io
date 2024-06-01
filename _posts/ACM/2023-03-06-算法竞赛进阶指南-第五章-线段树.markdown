@@ -11,7 +11,7 @@ author: Zhenshuai Yin
 description: 算法竞赛进阶指南-第五章-线段树
 hidden: false
 image: /assets/images/markdown.jpg
-headerImage: false
+headerImage: true
 ---
 
 一种基于分支思想的二叉树结构.与树状数组相比,线段树是一种更加通用的结构

@@ -10,8 +10,8 @@ tags:
 author: Zhenshuai Yin
 description: 算法竞赛进阶指南算法整理
 hidden: false
-#image: /assets/images/markdown.jpg
-#headerImage: false
+image: /assets/images/markdown.jpg
+headerImage: true
 star: true
 ---
 
