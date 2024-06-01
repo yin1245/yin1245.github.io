@@ -1,5 +1,5 @@
 ---
-title: 算法竞赛进阶指南-第四章-同余
+title: "算法竞赛进阶指南-第四章-同余"
 date: 2023-02-28 15:22:24
 layout: post
 category: ACM

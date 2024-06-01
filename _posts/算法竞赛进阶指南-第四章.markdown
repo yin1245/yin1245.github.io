@@ -1,5 +1,5 @@
 ---
-jtitle: 算法竞赛进阶指南-第四章
+jtitle: "算法竞赛进阶指南-第四章"
 date: 2023-02-03 09:25:15
 layout: post
 category: ACM

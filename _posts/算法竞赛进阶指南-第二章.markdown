@@ -1,5 +1,5 @@
 ---
-title: 算法竞赛进阶指南(第二章)
+title: "算法竞赛进阶指南(第二章)"
 date: 2022-09-05 10:33
 layout: post
 category: ACM

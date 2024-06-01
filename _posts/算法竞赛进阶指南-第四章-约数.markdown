@@ -1,5 +1,5 @@
 ---
-title: 算法竞赛进阶指南-第四章-约数
+title: "算法竞赛进阶指南-第四章-约数"
 date: 2023-02-04 11:13:12
 layout: post
 category: ACM

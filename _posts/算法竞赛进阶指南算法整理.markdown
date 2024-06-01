@@ -1,5 +1,5 @@
 ---
-title: 算法竞赛进阶指南算法整理
+title: "算法竞赛进阶指南算法整理"
 date: 2022-10-25 11:39:26
 layout: post
 category: LLM
