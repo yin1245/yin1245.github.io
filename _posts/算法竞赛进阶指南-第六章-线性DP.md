@@ -6,6 +6,7 @@ category: ACM
 tags:
 author: Zhenshuaiyin
 description: 算法竞赛进阶指南-第六章-线性DP
+hidden: false
 ---
 
 # 动态规划
