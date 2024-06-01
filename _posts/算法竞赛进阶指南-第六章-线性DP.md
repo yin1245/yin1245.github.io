@@ -4,7 +4,10 @@ date: 2023-03-09 22:07:07
 layout: post
 category: ACM
 tags:
-author: Zhenshuaiyin
+    - markdown
+    - components
+    - extra
+author: Zhenshuai Yin
 description: 算法竞赛进阶指南-第六章-线性DP
 hidden: false
 image: /assets/images/markdown.jpg
