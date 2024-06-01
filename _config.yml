@@ -8,7 +8,7 @@ description: A blog about technology and stuff related
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: https://tuchuang-yzs.oss-cn-beijing.aliyuncs.com/me.jpg
+picture: https://tuchuang-yzs.oss-cn-beijing.aliyuncs.com/mypicture.jpg
 
 # your site color theme, true for dark theme, 
 # false to light theme, auto to switch with system.
@@ -31,34 +31,34 @@ permalink: /:title/
 # if you don't want comments in your posts, leave categories empty
 disqus:
   shortname: github # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+  categories: [blog, project, LLM] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
-instagram: myinstagram
-linkedin: mylinkedin
-github: mygithub
-email: myemail@gmail.com
+#facebook: myfacebook
+#twitter: mytwitter
+#instagram: myinstagram
+#linkedin: mylinkedin
+github: https://github.com/yin1245
+email: yzs2003@foxmail.com
 
 authors:
-  johndoe:
-    name: John Doe
-    bio: A Man who travels the world eating noodles
+  yin1245:
+    name: Zhenshuai Yin
+    bio: A student at northeastern university
     external-image: false
-    picture: assets/images/profile.jpg
-    twitter: johndoe
-  jamesfoster:
-    name: James Foster
-    bio: A Man who develops software with coffee
-    external-image: false
-    picture: assets/images/james.jpg
-    twitter: jamesfoster
+    picture: https://tuchuang-yzs.oss-cn-beijing.aliyuncs.com/mypicture.jpg
+#    twitter:
+#  jamesfoster:
+#    name: James Foster
+#    bio: A Man who develops software with coffee
+#    external-image: false
+#    picture: assets/images/james.jpg
+#    twitter: jamesfoster
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
-width: normal
+width: large
 
 # if you don't need projects, comment the *projects* configs below
 projects: true
@@ -66,6 +66,7 @@ projects: true
 # if you don't need "about" or "blog", comment them out below
 about: true
 blog: true
+LLM: true
 
 # do you want to show the "read time" of the posts?
 read-time: true
