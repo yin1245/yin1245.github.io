@@ -8,7 +8,7 @@ tag:
 - markdown
 - elements
 star: true
-category: FedMD
+category: LLM
 author: johndoe
 description: Markdown summary with different options
 ---
