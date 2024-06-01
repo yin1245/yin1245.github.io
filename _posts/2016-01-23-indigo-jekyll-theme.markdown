@@ -1,17 +1,16 @@
 ---
-title: "Markdown Common"
+title: ":ramen: Indigo, minimalist jekyll theme"
 layout: post
-date: 2016-02-24 22:45
-image: /assets/images/markdown.jpg
-headerImage: false
-tag:
-    - markdown
-    - elements
-star: true
-category: ACM
-hidden: false
+date: 2016-01-23 22:10
+tag: jekyll
+image: https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png
+headerImage: true
+hidden: true
+description: "This is a simple and minimalist template for Jekyll for those who likes to eat noodles."
+category: project
 author: johndoe
-description: Markdown summary with different
+externalLink: false
+star: true
 ---
 
 ![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)

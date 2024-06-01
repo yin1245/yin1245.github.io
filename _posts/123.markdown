@@ -1,17 +1,17 @@
 ---
-title: "Markdown Common"
+title: "12312"
+date: 2022-09-05 10:33
 layout: post
-date: 2016-02-24 22:44
+category: ACM
+tags:
+    - markdown
+    - components
+    - extra
+author: Zhenshuai Yin
+description: 12312
+hidden: false
 image: /assets/images/markdown.jpg
 headerImage: false
-tag:
-    - markdown
-    - elements
-star: true
-category: ACM
-hidden: false
-author: johndoe
-description: Markdown summary with different
 ---
 
 # 基本数据结构
