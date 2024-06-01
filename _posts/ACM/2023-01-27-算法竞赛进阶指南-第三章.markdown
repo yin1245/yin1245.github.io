@@ -673,6 +673,7 @@ int main()
 
 把变化的部分提取为状态,可以用一个三元组代表一个状态,分别表示,状态和横纵坐标
 
+{% raw %}
 ```c++
 #include <bits/stdc++.h>
 using namespace std;
@@ -786,6 +787,7 @@ int main()
     }
 }
 ```
+{% endraw %}
 
 #### 矩阵距离
 
