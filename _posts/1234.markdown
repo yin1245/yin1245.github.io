@@ -1,5 +1,5 @@
 ---
-title: "算法竞赛进阶指南(第二章)"
+title: "12312"
 date: 2022-09-05 10:33
 layout: post
 category: ACM
@@ -8,7 +8,7 @@ tags:
     - components
     - extra
 author: Zhenshuai Yin
-description: 算法竞赛进阶指南(第二章)
+description: 12312
 hidden: false
 image: /assets/images/markdown.jpg
 headerImage: false
