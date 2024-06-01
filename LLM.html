@@ -9,7 +9,12 @@ title: LLM
 		{% for post in site.posts %}
 			{% if post.category == 'LLM' %}
 				{% if post.hidden != true %}
-					{% include blog-post.html %}
+                    <div class="item {% if post.star %}star{% endif %}">
+                        <a class="url" href="{{ site.url }}{{ post.url }}">
+                            <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
+                            <h3 class="title">{{ post.title }}</h3>
+                        </a>
+                    </div>
 				{% endif %}
 			{% endif %}
 		{% endfor %}
