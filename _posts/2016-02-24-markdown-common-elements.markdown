@@ -9,7 +9,7 @@ tag:
 - elements
 star: true
 category: LLM
-hidden: false
+hidden: true
 author: johndoe
 description: Markdown summary with different options
 ---

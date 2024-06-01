@@ -9,7 +9,7 @@ tag:
 - components
 - extra
 category: FedMD
-hidden: false
+hidden: true
 author: jamesfoster
 description: Markdown summary with different options
 ---
