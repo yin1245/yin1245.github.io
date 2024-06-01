@@ -5,9 +5,9 @@ date: 2016-02-24 22:48
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
-- markdown
-- components
-- extra
+    - markdown
+    - components
+    - extra
 category: FedMD
 hidden: false
 author: jamesfoster
