@@ -1,6 +1,6 @@
 ---
 title: 算法竞赛进阶指南-第六章-线性DP
-date: 2023-03-09 22:07:07
+date: 2023-03-09 22:07
 layout: post
 category: ACM
 tags:
