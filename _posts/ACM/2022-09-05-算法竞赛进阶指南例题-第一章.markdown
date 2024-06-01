@@ -13,7 +13,7 @@ hidden: false
 image: /assets/images/markdown.jpg
 headerImage: false
 ---
-![image-20220816094458890](https://tuchuang-yzs.oss-cn-beijing.aliyuncs.com/image-20240601191910432.png)
+
 注:本md中的/ww指(doge),/youl指幽灵
 
 # 基本算法
