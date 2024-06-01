@@ -7,8 +7,8 @@ description: A blog about technology and stuff related
 
 # if it's an external image, update below for true
 # better with square images
-external-image: true
-picture: https://tuchuang-yzs.oss-cn-beijing.aliyuncs.com/mypicture.jpg
+external-image: false
+picture: assert/images/favicon/me.jpg
 
 # your site color theme, true for dark theme, 
 # false to light theme, auto to switch with system.
