@@ -9,9 +9,9 @@ tags:
     - extra
 author: Zhenshuai Yin
 description: 算法竞赛进阶指南例题(第一章)
-hidden: true
+hidden: false
 image: /assets/images/markdown.jpg
-headerImage: false
+headerImage: true
 ---
 
 注:本md中的/ww指(doge),/youl指幽灵
