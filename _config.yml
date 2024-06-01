@@ -120,4 +120,5 @@ exclude:
     "Gemfile.lock",
     "FAQ.md",
     "vendor",
+    "notice.md",
   ]
