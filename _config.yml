@@ -8,7 +8,7 @@ description: A blog about technology and stuff related
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/profile.jpg
+picture: https://tuchuang-yzs.oss-cn-beijing.aliyuncs.com/me.jpg
 
 # your site color theme, true for dark theme, 
 # false to light theme, auto to switch with system.
@@ -18,7 +18,7 @@ dark-theme: auto
 # and specify source (external or local).
 resume: true
 resume-external: false
-resume-url: /resume/CV_Zhenshuai Yin.pdf
+resume-url: resume/CV_Zhenshuai Yin.pdf
 
 url: https://yin1245.github.io
 # your url: https://USERNAME.github.io

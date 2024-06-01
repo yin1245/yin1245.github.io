@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e60b35da-4a20-45a1-939d-a86458af20fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/resume/CV_Zhenshuai Yin.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2016-01-23-indigo-jekyll-theme.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2016-01-23-indigo-jekyll-theme.markdown" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,7 @@
       <workItem from="1717222975869" duration="10000" />
       <workItem from="1717222995064" duration="319000" />
       <workItem from="1717223333163" duration="153000" />
-      <workItem from="1717225574199" duration="91000" />
+      <workItem from="1717225574199" duration="616000" />
     </task>
     <servers />
   </component>
