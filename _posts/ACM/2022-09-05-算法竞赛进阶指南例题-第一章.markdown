@@ -9,7 +9,7 @@ tags:
     - extra
 author: Zhenshuai Yin
 description: 算法竞赛进阶指南例题(第一章)
-hidden: false
+hidden: true
 image: /assets/images/markdown.jpg
 headerImage: false
 ---
