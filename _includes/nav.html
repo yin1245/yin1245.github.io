@@ -6,10 +6,10 @@
             </li>
         {% endif %}
 
-        {% if site.blog == true %}
-            {% if page.title != "Blog" %}
+        {% if site.FedMD == true %}
+            {% if page.title != "FedMD" %}
                 <li class="item">
-                    <a class="link" href="{{ site.url }}/blog">Blog</a>
+                    <a class="link" href="{{ site.url }}/FedMD">FedMD</a>
                 </li>
             {% endif %}
         {% endif %}
@@ -38,16 +38,16 @@
             {% endif %}
         {% endif %}
 
-        {% if site.resume == true %}
-            <li class="item">
-                <a class="link" href="{% if site.resume-external %}{{ site.resume-url }}{% else %}{{ site.url }}/{{ site.resume-url }}{% endif %}">Resume</a>
-            </li>
-        {% endif %}
-
         {% if site.portfolio == true %}
         <li class="item">
             <a class="link" href="{{ site.url }}/{{ site.portfolio-url }}">Portfolio</a>
         </li>
+        {% endif %}
+
+        {% if site.resume == true %}
+            <li class="item">
+                <a class="link" href="{% if site.resume-external %}{{ site.resume-url }}{% else %}{{ site.url }}/{{ site.resume-url }}{% endif %}">Resume</a>
+            </li>
         {% endif %}
     </ul>
 </nav>
