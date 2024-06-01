@@ -1,5 +1,5 @@
 ---
-title: "算法竞赛进阶指南-第三章"
+title: "An Advanced Guide to algorithmic contests - Chapter 3"
 layout: post
 date: 2016-02-24 22:48
 image: /assets/images/markdown.jpg
@@ -11,7 +11,7 @@ tag:
 category: FedMD
 hidden: false
 author: ZhenshuaiYin
-description: 算法竞赛进阶指南-第三章
+description: An Advanced Guide to algorithmic contests - Chapter 3
 ---
 
 # 搜索
