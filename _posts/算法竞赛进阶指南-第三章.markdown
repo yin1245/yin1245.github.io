@@ -1,17 +1,17 @@
 ---
 title: "算法竞赛进阶指南-第三章"
-date: 2023-01-27 15:47
 layout: post
-category: ACM
-tags:
+date: 2016-02-24 22:48
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
     - markdown
     - components
     - extra
-author: Zhenshuai Yin
-description: 算法竞赛进阶指南-第三章
+category: FedMD
 hidden: false
-image: /assets/images/markdown.jpg
-headerImage: false
+author: ZhenshuaiYin
+description: 算法竞赛进阶指南-第三章
 ---
 
 # 搜索
