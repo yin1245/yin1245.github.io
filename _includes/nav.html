@@ -15,11 +15,11 @@
         {% endif %}
 
         {% if site.LLM == true %}
-        {% if page.title != "LLM" %}
-        <li class="item">
-            <a class="link" href="{{ site.url }}/LLM">LLM</a>
-        </li>
-        {% endif %}
+            {% if page.title != "LLM" %}
+                <li class="item">
+                    <a class="link" href="{{ site.url }}/LLM">LLM</a>
+                </li>
+            {% endif %}
         {% endif %}
 
         {% if site.projects == true %}
