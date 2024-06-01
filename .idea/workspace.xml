@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e60b35da-4a20-45a1-939d-a86458af20fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ACM.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/算法竞赛进阶指南-第三章.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/算法竞赛进阶指南-第二章.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/算法竞赛进阶指南-第五章-并查集.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/算法竞赛进阶指南-第五章-树状数组.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/算法竞赛进阶指南-第五章-线段树.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/算法竞赛进阶指南-第六章-线性DP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/算法竞赛进阶指南-第四章-同余.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/算法竞赛进阶指南-第四章-约数.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/算法竞赛进阶指南-第四章-质数.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/算法竞赛进阶指南-第四章.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/算法竞赛进阶指南例题-第一章.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/算法竞赛进阶指南算法整理.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/pages/home-blog-projects.sass" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/pages/home-blog-projects.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/githubio",
+    "last_opened_file_path": "D:/githubio/_posts",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,6 +55,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\githubio\_posts" />
       <recent name="D:\githubio" />
       <recent name="D:\githubio\portfolio" />
       <recent name="D:\githubio\assets\images" />
@@ -87,7 +95,7 @@
       <workItem from="1717222975869" duration="10000" />
       <workItem from="1717222995064" duration="319000" />
       <workItem from="1717223333163" duration="153000" />
-      <workItem from="1717225574199" duration="5358000" />
+      <workItem from="1717225574199" duration="6086000" />
     </task>
     <servers />
   </component>
