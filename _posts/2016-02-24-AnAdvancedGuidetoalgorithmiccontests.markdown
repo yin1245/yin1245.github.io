@@ -10,7 +10,7 @@ tag:
 - extra
 category: FedMD
 hidden: false
-author: ZhenshuaiYin
+author: yin1245
 description: An Advanced Guide to algorithmic contests - Chapter 3
 ---
 
