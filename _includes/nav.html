@@ -43,5 +43,11 @@
                 <a class="link" href="{% if site.resume-external %}{{ site.resume-url }}{% else %}{{ site.url }}/{{ site.resume-url }}{% endif %}">Resume</a>
             </li>
         {% endif %}
+
+        {% if site.portfolio == true %}
+        <li class="item">
+            <a class="link" href="{{ site.url }}/{{ site.portfolio-url }}">Resume</a>
+        </li>
+        {% endif %}
     </ul>
 </nav>
