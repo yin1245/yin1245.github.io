@@ -122,3 +122,4 @@ exclude:
     "vendor",
     "notice.md",
   ]
+future: true
