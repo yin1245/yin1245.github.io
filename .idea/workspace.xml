@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e60b35da-4a20-45a1-939d-a86458af20fb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/_posts/LLM/2024-06-04-Prompt Tuning.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +42,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "editing.templates",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -96,6 +97,7 @@
       <workItem from="1717241176542" duration="1892000" />
       <workItem from="1717492723508" duration="33000" />
       <workItem from="1717492800357" duration="2290000" />
+      <workItem from="1717515725009" duration="78000" />
     </task>
     <servers />
   </component>
