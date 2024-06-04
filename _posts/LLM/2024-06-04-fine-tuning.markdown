@@ -111,15 +111,3 @@ output字段是人类认为的正确回答
 
 ### 注意事项
 在微调过程中, 超参数(如learning rate, batch size, epoch)的调整非常重要, 需要根据特定任务和数据集进行调整, 一般而言, learning rate大了, 训练速度快, 但不容易收敛, (可能适合一个粗略的对齐?一般量级为10^-4^或10^-5^), batch size为每次的批处理大小, 大的batch size需要更大的GPU显存, 训练速度会更快, 但训练效果可能性能更差. 需要注意的是, batch size和learning rate要同步调整, 小的batch在小learning rate下表现最好, 而大batch size在大的learning rate下表现最好(如果大批量训练在相同学习率下优于小批量训练, 这可能表明学习率大于小批量训练的最佳值, 这时可以选择调小learning rate), 而epoch可以设置一个适当大的值, 然后直到收敛(或者波动小于某个设定值)或者到达设定的epoch.
-
-
-
-
-
-
-
-
-
-
-
- 
