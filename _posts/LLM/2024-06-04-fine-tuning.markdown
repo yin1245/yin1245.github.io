@@ -16,9 +16,9 @@ description: 记录自己对LLM的Fine-Tuning的理解
 # Fine tuning
 参考: 
 
-​	<[【大模型开发 】 一文搞懂Fine-tuning（大模型微调）_finetuning大模型-CSDN博客](https://blog.csdn.net/qq_39172059/article/details/136693607)>
+​	[【大模型开发 】 一文搞懂Fine-tuning（大模型微调）_finetuning大模型-CSDN博客](https://blog.csdn.net/qq_39172059/article/details/136693607)
 
-​	<[江大白 | 深入浅出，Batch Size对神经网络训练的影响-CSDN博客](https://blog.csdn.net/csdn_xmj/article/details/137212209)>
+​	[江大白 | 深入浅出，Batch Size对神经网络训练的影响-CSDN博客](https://blog.csdn.net/csdn_xmj/article/details/137212209)
 
 Fine tuning: 通过特定领域数据对预训练模型进行针对性优化, 以提升其在特定任务上的性能.
 ## Fine-tuning的作用
