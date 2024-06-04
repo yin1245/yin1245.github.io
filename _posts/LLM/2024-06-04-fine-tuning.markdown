@@ -1,5 +1,5 @@
 ---
-title: "fine tuning"
+title: "Fine Tuning"
 layout: post
 date: 2024-06-04 17:30
 image: /assets/images/markdown.jpg
@@ -11,7 +11,7 @@ tag:
 hidden: false
 category: LLM
 author: Zhenshuai Yin
-description: 记录自己对于LLM的fine tuning的理解
+description: 记录自己对LLM的Fine-Tuning的理解
 ---
 # Fine tuning
 参考: 
