@@ -13,7 +13,10 @@ category: LLM
 author: Zhenshuai Yin
 description: 记录自己对LLM的Fine-Tuning的理解
 ---
+[toc]
+
 # Fine tuning
+
 参考: 
 
 ​	[【大模型开发 】 一文搞懂Fine-tuning（大模型微调）_finetuning大模型-CSDN博客](https://blog.csdn.net/qq_39172059/article/details/136693607)
@@ -81,9 +84,9 @@ RLHF(Reinforcement Learning from Human Feedback): 一种利用人类反馈作为
 
 旨在最小化微调参数数量和计算复杂度的情况下, 实现高效的迁移学习, 它仅更新模型中的部分参数, 可以显著降低训练时间和成本, 适用于计算和数据资源有限的情况, 包括Prefix Tuning, Prompt Tuning, Adapter Tuning等方法
 
-#### Prefix Tuning
+因为太多, 所以单开一篇
 
-
+[Parameter-Efficient Fine-Tuning | Zhenshuai Yin (yin1245.github.io)](https://yin1245.github.io/Parameter-Efficient-Fine-Tuning/)
 
 ## Fine-tuning的实现方式
 

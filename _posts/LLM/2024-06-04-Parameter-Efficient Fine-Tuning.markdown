@@ -14,6 +14,8 @@ author: Zhenshuai Yin
 description: 记录自己对于Parameter-Efficient Fine-Tuning的理解
 ---
 
+[toc]
+
 参考:[Prompt-Tuning——深度解读一种新的微调范式_prompt tuning-CSDN博客](https://blog.csdn.net/qq_36426650/article/details/120607050)
 
 本人只是转载, 在作者的基础上加上一些自己的理解和侧重点
