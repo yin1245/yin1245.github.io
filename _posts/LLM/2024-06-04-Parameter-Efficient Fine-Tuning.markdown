@@ -1,5 +1,5 @@
 ---
-title: "Prompt Tuning"
+title: "Parameter-Efficient Fine-Tuning"
 layout: post
 date: 2024-06-04 23:43
 image: /assets/images/markdown.jpg
@@ -11,12 +11,14 @@ tag:
 hidden: false
 category: LLM
 author: Zhenshuai Yin
-description: 记录自己对于Prompt Tuning的理解
+description: 记录自己对于Parameter-Efficient Fine-Tuning的理解
 ---
 
 参考:[Prompt-Tuning——深度解读一种新的微调范式_prompt tuning-CSDN博客](https://blog.csdn.net/qq_36426650/article/details/120607050)
 
 本人只是转载, 在作者的基础上加上一些自己的理解和侧重点
+
+因参考作者用Prompt Tuning代表Parameter-Efficient Fine-Tuning, 故本文中Prompt Tuning有时表示Prompt Tuning, 有时表示Parameter-Efficient Fine-Tuning.
 
 LLM的发展历程:
 
@@ -285,6 +287,142 @@ Prompt本质上是对下游任务的指令, 可以作为一种信息增强. 简�
 > 参数有效性学习的背景: 在一般的计算资源条件下, 大规模的模型很难进行全量微调, 因为所有参数都需要计算梯度并进行更新, 消耗时间和空间资源. 为了解决这个问题, 参数有效性学习被提出, 其旨在确保模型效果不受太大影响的条件下, 尽可能地提高训练的时间和空间效率.
 >
 > 参数有效性训练: 在参数有效性学习的过程中, 大模型只需要指定或额外添加少量的可训练参数, 而其余的参数全部冻结(不予更新), 这样就可以在大大提高模型的训练效率的同时, 确保指标能够得到优化.
+
+常见经典的参数有效性学习: Adapter-Tuning, Prefix-Tuning, BitFit
+
+#### Adapter-Tuning
+
+该方法固定Transformer的全部参数, 然后再Transformer的每一个block里嵌入一些新初始化的Adapter Network
+
+![img](https://tuchuang-yzs.oss-cn-beijing.aliyuncs.com/41f2ac65394c4e819629f1debeaf6a96.png)
+
+Adapter位于Feed-Forward layer之后, 残差连接之前. Adapter本质上就是两层MLP, 分别负责将Transformer的表征降维和升维. 基于Adapter的方法, 只需要添加不到5%的可训练参数, 即可几乎达到全参数训练的效果. 在真实场景应用时, 不同的任务我们不需要重新对整个预训练模型进行微调, 只需要保存Adapter即可.
+
+#### Prefix-Tuning
+
+其收到Prompt-Tuning的启发, Prompt-Tuning将整个预训练模型参数全部固定, 只对Template对应的少量参数(如连续模板中的Prompt Encoder, 伪标记对应的embedding等)进行训练. 在Prefix-Tuning中, 则是除了对输入层添加模板外, 还对Transformer的每一层添加"模板".
+
+![img](https://tuchuang-yzs.oss-cn-beijing.aliyuncs.com/b55d1a89cff34c4181c44103a47e86bf.png)
+
+Transformer的参数完全固定, 只需要对Prefix部分进行训练即可, 对于不同的任务训练不同的Prefix, 在实际使用时, 挑选任务相关的Prefix和Transformer进行组装, 即可实现可插拔式的应用.
+
+Prefix-Tuning应用于Transformer层的key和value
+
+#### P-tuning V2
+
+与Prefix-Tuning相似, 不同之处在于Prefix-Tuning面向文本生成领域,而p-tuning V2面向自然语言理解. 本质上完全相同.
+
+![在这里插入图片描述](https://tuchuang-yzs.oss-cn-beijing.aliyuncs.com/4240913533d3411a91a099396e1a89da.png)
+
+左图部分是基于连续提示的Prompt-Tuning只有输入层对应模板部分的Embedding和MLP参数是可训练的, 右图部分表示的事Prefix-Tuning(P-tuning V2), Transformer的每一层的前缀部分也是可以训练的, 可以抽象的任务是在每一层添加了连续的模板. 但实际上, Prefix-Tuning并不是真正的在每一层添加模板, 而是通过Huggingface框架内置的past_key_value参数控制. 本质与adapter类似, 是在Transformer内部对Key和Value插入可训练的两个MLP.
+
+#### LoRA(Low-Rank Adaptation)
+
+参考: [LORA详解（史上最全）_lora模型-CSDN博客](https://blog.csdn.net/qq_41475067/article/details/138155486)
+
+​		 [LoRA的原理简介_lora机制-CSDN博客](https://blog.csdn.net/stingfire/article/details/138315770)
+
+一种用于微调大型语言模型的低秩适应技术. 它最初应用于NLP领域, 特别是用于微调GPT3等模型. LoRA通过仅训练低秩矩阵, 然后将这些参数注入到原始模型中, 从而实现对模型的微调. 这种方法不仅减少了计算需求, 而且使得训练资源比全量微调小得多.
+
+> *在Stable Diffusion模型的应用中, LoRA被用作一种插件, 允许用户在不修改SD模型的情况下, 利用少量数据训练出具有特定画风, IP或人物特征的模型.*
+
+在使用时, 将LoRA模型与预训练模型结合使用, 通过调整LoRA的权重可以改变输出.
+
+LoRA模型的优点包括: 训练速度快, 计算需求小, 训练权重低
+
+LoRA技术通过将权重矩阵(W)分解成低秩矩阵的乘积(与Transformer中的V矩阵相似?),降低了参数数目, 进而达到了减少硬件资源, 加速微调进程的目的.
+
+LoRA在保留基座模型全部参数的同时, 拆分出权重矩阵进行矩阵分解并更新, 通过调整训练中由低秩矩阵乘积表示的更新矩阵来在减少存储空间的同时保留了模型的质量和微调速度.
+
+![img](https://tuchuang-yzs.oss-cn-beijing.aliyuncs.com/0d8ae9facf45486999d9b8e68d7a6535.png)
+
+对于一个预训练好的基座模型, 保留其原有的权重矩阵W不变, 仅微调训练更新部分, 且这个更新的权重矩阵被分解为A和B两个低秩矩阵, 其中A矩阵初始化为高斯分布矩阵, B矩阵初始化为全0矩阵.
+
+![image-20240605205117643](https://tuchuang-yzs.oss-cn-beijing.aliyuncs.com/image-20240605205117643.png)
+
+在实际场景应用时, 会引入两个超参数: α和r, 二者之比α/r对△W(更新的权重矩阵)进行缩放, 控制△W的更新步长
+
+LoRA作者发现, 仅对W~q~(查询的权重矩阵,在Transformer中会有讲解)进行分解更新的效果不够好, 但对全部四个权重矩阵进行更新并没有大幅提升. 对W~q~和W~v~进行分解更新相对而言效果最好. r一般取4或8.
+
+#### UniPELT
+
+参考: [UniPELT: A Unified Framework for Parameter-Efficient Language Model Tuning - 郑之杰的个人网站 (0809zheng.github.io)](https://0809zheng.github.io/2023/02/14/unipelt.html)
+
+相关工作对Adapter, Prefix-Tuning, LoRA等参数有效性学习进行了集成, 因为这些参数有效性学习方法本质上都是插入少量的新的参数, 这些新的参数可以对预训练模型起到提示作用, 只不过并不是以人类可读的离散的模板形式体现而已.
+
+UniPELT将LoRA,Prefix Tuning, Adapter结合在一起, 通过门控机制学习激活最适合当前数据和任务的方法.
+
+![img](https://tuchuang-yzs.oss-cn-beijing.aliyuncs.com/f1211d0e55f64e7b92714d3692efa290.png)
+
+对于每个模块, 通过线性层实现门控, 通过G~p~参数控制Prefix-Tuning方法的开关, G~L~控制LoRA方法的开关, G~A~控制Adapter方法的开关. 可训练参数包括LoRA矩阵, Prefix-tuning参数, Adapter参数和门控函数权重(图中蓝颜色的参数).
+
+UniPELT方法始终优于常规的全量微调以及它在不同设置下包含的子模块，通常超过在每个任务中单独使用每个子模块的最佳性能的上限；并且通过研究结果表明，多种 UniPELT 方法的混合可能对模型有效性和鲁棒性都有好处。
+
+#### BitFit
+
+只需要指定神经网络中的偏向(Bias)为可训练参数即可. BitFit的参数量只有不到2%, 但实验效果接近全量参数.
+
+# 面向超大规模模型的Prompt-Tuning
+
+对于超过10亿参数量的模型来说, Prompt-Tuning所带来的增益远远高于标准的全量的Fine-tuning. 小样本甚至零样本的性能也能够极大地被激发出来, 这得益于这些模型的参数量足够大, 训练过程中使用了足够多的语料, 同时设计的预训练任务足够有效. 对于GPT3, 只需要设计合适的模板或指令即可实现免参数训练的零样本学习.(换而言之, 对于一个足够成熟, 并且掌握了相关背景知识的人, 你只需要给他一个提示, 或者进行一个培训就可以让这个人做一些工作, 而没必要从头到尾重新塑造一下这个人)
+
+几个面向超大规模的Prompt-Tuning方法:
+
+​	上下文学习 In-Context Learning(ICL): 直接挑选少量的训练样本作为该任务的提示
+
+​	指令学习	Instruction-Tuning: 构建任务指令集, 促使模型根据任务指令作出反馈
+
+​	思维链		Chain-of-Thought(CoT): 给予能够激发模型推理和解释能力的信息, 通过线性链式的模式指导模型生成合理的结果.
+
+## In-Context Learning(上下文学习)
+
+旨在从训练集中挑选少量的标注样本, 设计任务相关的指令形成提示模板, 用于指导测试样本生成相应的结果.
+
+![image-20240605202343016](https://tuchuang-yzs.oss-cn-beijing.aliyuncs.com/image-20240605202343016.png)
+
+ICT在预测过程中, 存在方差大, 不稳定的问题.
+
+### 样本的Input-Output Mapping的正确性是否对ICL有影响
+
+结果:
+
+​	使用Demonstration比不使用的效果好
+
+​	random Label对模型性能的破坏不是很大, 说明ICL更多的是去学习Task-specific的Format, 而不是Input-Output Mapping.
+
+> MetaICL是一种通过任务统一范式并使用元学习进行训练的方法, 其重点增加了多任务的训练来改进ICL在下游零样本推理时的泛化性能.
+
+
+
+
+
+太多了, 之后再整理()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
