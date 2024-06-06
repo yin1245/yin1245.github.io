@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e60b35da-4a20-45a1-939d-a86458af20fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/_posts/LLM/2024-06-05-Pre-Trained.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/LLM/2024-06-05-Transformer.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/LLM/2024-06-06-GPT提示词-COSTAR框架" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/LLM/2024-06-04-Parameter-Efficient Fine-Tuning.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/LLM/2024-06-04-Parameter-Efficient Fine-Tuning.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/project/2024-06-06-电力大模型.markdown" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +101,7 @@
       <workItem from="1717604558994" duration="29000" />
       <workItem from="1717605786321" duration="38000" />
       <workItem from="1717610688818" duration="61000" />
+      <workItem from="1717632659842" duration="97000" />
     </task>
     <servers />
   </component>
