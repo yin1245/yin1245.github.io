@@ -9,7 +9,7 @@ tag:
 - components
 - extra
 hidden: false
-category: LLM
+category: FedMD
 author: Zhenshuai Yin
 description: 记录对Actor-Critic算法的理解
 ---

@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e60b35da-4a20-45a1-939d-a86458af20fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/_posts/FD/2024-06-06-Actor-Critic.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/FD/2024-06-06-FD.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/FD/2024-06-06-FL.markdown" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/FD/2024-06-06-Actor-Critic.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/FD/2024-06-06-Actor-Critic.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/FD/2024-06-06-FD.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/FD/2024-06-06-FD.markdown" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +109,7 @@
       <workItem from="1717641757829" duration="15000" />
       <workItem from="1717641797888" duration="56000" />
       <workItem from="1717645319391" duration="325000" />
+      <workItem from="1717665935897" duration="99000" />
     </task>
     <servers />
   </component>
