@@ -16,11 +16,11 @@ dark-theme: auto
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
-resume: true
+resume: false
 resume-external: false
 resume-url: resume/CV_Zhenshuai Yin.pdf
 
-portfolio: true
+portfolio: false
 portfolio-external: false
 portfolio-url: portfolio/portfolio_Zhenshuai Yin.pdf
 
